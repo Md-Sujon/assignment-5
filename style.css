@@ -18,6 +18,7 @@ margin-left:400px;
     grid-template-columns: repeat(3,1);
 }
 
+
 .meal-item{
     border-radius: 1rem;
     overflow: hidden;
@@ -41,4 +42,10 @@ margin-left:400px;
 }
 .mela-item a{
     text-decoration: none;
+}
+.notFound{
+/* grid-template-columns: 1fr!important; */
+color: tomato;
+font-size: 60px;
+font-weight: 600;
 }
