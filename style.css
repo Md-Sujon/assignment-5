@@ -1,10 +1,6 @@
 *{
     padding: 0;
-    margin: 0;
-   
-}
-#serch-meal{
-    align-items: center;
+    margin: 0; 
 }
 #serch-box{
 height: 50px;
@@ -12,12 +8,6 @@ width: 500px;
 align-items: center;
 margin-left:400px;
 }
-
-#item-all{
-    display: grid;
-    grid-template-columns: repeat(3,1);
-}
-
 
 .meal-item{
     border-radius: 1rem;
@@ -32,7 +22,7 @@ margin-left:400px;
 
 #meal{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 2;
 }
 .meal-item{
@@ -81,9 +71,11 @@ margin-left: 350px;
     margin: 2rem;
 }
 .recipe-meal-img img{
-    width: 200px;
-    height: 200px;
-    
+    width: 600px;
+    height: 400px;
+    border: 10px rgb(109, 78, 0)solid;
+    border-radius: 20px;
+    box-shadow: 4px 10px 15px gray ;
     margin: 0 auto;
     display: block;
 }

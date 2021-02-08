@@ -51,19 +51,23 @@ fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealItem.dataset.i
   }
 }
 
-function mealRecipeModal(meal){
-
+function mealRecipeModal(meals){
+  //  console.log(meals);
 const mealDiv=document.getElementById("meal-details-content");
+mealDiv.classList.remove('meal-details-content')
+meals=meals[0];
   mealDiv.innerHTML=`
-<h2>StrMeal:${meal.strMeal}</h2>
-  <p>StrCategory:${meal.strCategory}</p>
-  <div class = "recipe-instruct">
-    <h3>Instructions:</h3>
-    <p>strInstructions:${meal.strInstructions}</p>
-  </div>
-  <div class = "recipe-meal-img">
-    <img src = "${meal.strMealThumb}" alt = "food">
-  </div>
+  
+    <h2>Name:"${meals.strMeal}"</h2>
+        
+      <h3>Category:"${meals.strCategory}"</h3>
+      <div class = "recipe-instruct">
+      <div class = "recipe-meal-img">
+      <img src = "${meals.strMealThumb}" alt = "food">
+        </div>
+              <h3>Instructions:</h3>
+              <p>${meals.strInstructions}</p>
+            </div>
 
   `;
 }
